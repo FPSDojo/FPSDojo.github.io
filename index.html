@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Film Fanatics</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <img src="images/FF.jpg" width="50px" /> -->
+            <li class="logo"><a href="index.html" style="text-decoration: none;">Film Fanatics </a> </li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><i class="fas fa-home"><a href="index.html">Home</a></i></li>
+                <li><i class="fas fa-tv"><a href="/series.html">TV Series</a></i></li>
+                <li><i class="fas fa-film"><a href="/movies.html">Movies</a></i></li>
+                <li><i class="fas fa-address-book"><a href="aboutus.html">About Us</a></i></li>
+            </div>
+            <li class="search-icon">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="searchmoviesnseries">
+                <label class="icon">
+               <span class="fas fa-search"></span>
+               </label>
+            </li>
+        </ul>
+    </nav>
+    <!--Main-->
+    <div>
+        <section>
+            <h2>
+                <i class="fas fa-plus-circle">&nbsp;Newly Added</h2></i>
+                <navc>
+
+                    <a href="# "><img src="/images/matrix.jpg " /> </a>
+                    <a href="# "><img src="/images/mortalk.jpg " /> </a>
+                    <a href="# "><img src="/images/peakyblinders.jpg " /> </a>
+                    <a href="# "><img src="/images/piratesocsea.jpg " /> </a>
+                    <a href="# "><img src="/images/aodead.jpg " width="40px "> </a>
+                    <!-- <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/wars.png " /> </a>
+                    <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/who.png " /> </a> -->
+                </navc>
+
+        </section>
+        <section>
+            <h2><i class="fas fa-fire">&nbsp;Top Rated</i></h2>
+            <navc>
+                <a href="/pages/got.html "><img src="/images/got-dl.jpg " /></a>
+                <a href="# "><img src=" /images/chernobyl.jpg " /> </a>
+                <a href="# "><img src="/images/bb.jpg " /> </a>
+                <a href="# "><img src="/images/bcsaul.jpg " /> </a>
+                <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/wars.png " /> </a>
+                <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/who.png " /> </a>
+                <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/trek.png " /> </a>
+            </navc>
+
+        </section>
+        <h2><i class="fas fa-chart-line">&nbsp;Trending</i></h2>
+        <navc>
+            <a href="# "><img src="/images/fm.jpg " /> </a>
+            <a href="# "><img src="/images/bvsdojustice.jpg " /> </a>
+            <a href="# "><img src="/images/friends.jpg " /> </a>
+            <a href="# "><img src="/images/interstaller.jpg " /> </a>
+            <a href="# "><img src="/images/lotr.jpg " /> </a>
+            <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/trek.png " /> </a>
+            <a href="# "><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158090/wars.png " /> </a>
+        </navc>
+
+
+        <!--Search-->
+        <!-- <script>
+            const searchmoviesnseries = () => {
+                let filter = document.getElementById('myInput').value.toUppercase();
+                let ul = document.getElementById('myUl');
+                let li = ul.getElementsByTagName('li');
+                for (var i = 0; i < li.length; i++) {
+                    let a = l i[i].getElementsByTagName('a')[0];
+                    let textvalue = a.textContent || a.innerHTML;
+                    if (textvalue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = '';
+                    } else {
+                        li[i].style.display = 'none';
+                    }
+                }
+
+            }
+        </script> -->
+        <script>
+            $('nav ul li.btn span').click(function() {
+                $('nav ul div.items').toggleClass("show ");
+                $('nav ul li.btn span').toggleClass("show ");
+            });
+        </script>
+        < <footer style="text-align: center; ">
+            <p>&copy 2021 Film Fanatics, Inc.</p>
+
+            </footer>
+</body>
+
+</html>
