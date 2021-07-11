@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Friends Reunion - Download</title>
+    <link rel="stylesheet" href="/pages/cssfiles/downdd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <!-- <img src="images/FF.jpg" width="50px" /> -->
+            <li class="logo"><a href="/index.html">Film Fanatics </a> </li>
+            <li class="btn" id="bar"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><i class="fas fa-home" style="color: white;"><a href="/index.html" style="text-decoration: none;">Home</a></i></li>
+                <li><i class="fas fa-tv" style="color: white;"><a href="/series.html" style="text-decoration: none;">TV Series</a></i></li>
+                <li><i class="fas fa-film" style="color: white;"><a href="/movies.html" style="text-decoration: none;">Movies</a></i></li>
+                <li><i class="fas fa-address-book" style="color: white;"><a href="/aboutus.html" style="text-decoration: none;">About Us</a></i></li>
+            </div>
+            <li class="search-icon">
+                <input type="text" placeholder="Under Maintenance..">
+                <label class="icon">
+               <span class="fas fa-search"></span>
+               </label>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="poster">
+            <img src="/images/friendsmovie.jpg">
+            <p>The One Where They Get Back Together.. (TV-Special)</p><br>
+            <p>Rating : 8.1/10&nbsp;<i class="fa fa-clock"></i></p>
+            <p>Duration : 104 Minutes&nbsp;<i class="fa fa-star"></i></p>
+            <p>Resolution : 1080p &nbsp;<i class="fa fa-expand "></i></p>
+            <p>Genres : Romance, Comedy, Sitcom&nbsp;<i class="fas fa-money-check"></i></p>
+        </div>
+        <header>
+            <div class=" drop-btn ">
+                <i class="fas fa-arrow-alt-circle-down"></i>&nbsp;Download <span class="fas fa-caret-down "></span>
+            </div>
+            <div class="tooltip "></div>
+            <div class="wrapper ">
+                <ul class="menu-bar ">
+                    <li class="Season1-drop">
+                        <a href="https://ouo.io/Co6L3M " target="_blank">1080p</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <script src="/pages/scripts/downscript.js "></script>
+    <script>
+        $('nav ul li.btn span').click(function() {
+            $('nav ul div.items').toggleClass("show ");
+            $('nav ul li.btn span').toggleClass("show ");
+        });
+    </script>
+    <script src="/pages/scripts/navres.js "></script>
+    <footer style="text-align: center; ">
+        <p>&copy 2021 Film Fanatics, Inc.</p>
+
+    </footer>
+</body>
+
+</html>

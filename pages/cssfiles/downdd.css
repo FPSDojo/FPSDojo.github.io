@@ -8,7 +8,7 @@
 }
 
 body {
-    background: white;
+    background: rgb(49, 49, 49);
 }
 
 div img p {
@@ -41,9 +41,13 @@ div img p {
     object-fit: contain;
 }
 
+.poster p {
+    color: white;
+}
+
 header {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
 }
 
 header .drop-btn {
@@ -71,7 +75,6 @@ header .tooltip {
     height: 15px;
     width: 15px;
     background: #242526;
-    ;
     transform: rotate(45deg);
     display: none;
 }
@@ -338,4 +341,8 @@ nav ul li.btn span.show:before {
     nav ul li .search-icon {
         width: 10vmin;
     }
+}
+
+footer p {
+    color: white;
 }
