@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -7,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    
 </head>
 
 <body>
@@ -29,13 +34,15 @@
     </nav>
     <!--Main-->
     <div>
+        <div>
+            <br>
+            <p style="align-items: center;"><a style="text-decoration: none;" href="/pages/allmovies.html">View All</a></p>
+            <br>
+        </div>
         <section>
-            <br>
-            <p><a href="/pages/allmovies.html">View All</a></p>
-            <br>
             <navc>
-                <a href="/pages/blackwidow.html" style="text-decoration: none; "><img src="/images/blackwidow.jpg"> <br> Black Widow</a>
-                <a href="/pages/greenland.html " style="text-decoration: none; "><img src="/images/greenland.jpg" /><br>Greenland </a>
+                <a href="/pages/greenland.html" style="text-decoration: none; "><img src="/images/greenland.jpg" /><br>The Sanctum </a>
+                <a href="/pages/blackwidow.html" style="text-decoration: none; "><img src="/images/blackwidow.jpg"> <br> 3 Idiots </a>
                 <a href="#" style="text-decoration: none;"><img src="/images/benjaminbutton.jpg" /> The Curious Case Of Banjamin Button </a>
                 <a href="#" style="text-decoration: none;"><img src="/images/godfather.jpg" /> The Godfather</a>
                 <a href="#" style="text-decoration: none;"><img src="/images/johnwick.jpg" /> John Wick </a>
@@ -62,7 +69,7 @@
                 <a href="#" style="text-decoration: none;"><img src="/images/irishman.jpg" /> The Irishman </a>
             </navc>
         </section>
-        <script type="text/javascript" src="/pages/scripts/slider.js "></script>
+
         <script>
             $('nav ul li.btn span').click(function() {
                 $('nav ul div.items').toggleClass("show ");
