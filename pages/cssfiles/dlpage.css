@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #18191A;
+    color: white;
+}
+
+nav {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1144px;
+    margin: auto;
+}
+
+#logo {
+    padding: 1rem;
+    font-weight: 1000;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.links a:hover {
+    background-color: #316eb3;
+    text-decoration: underline;
+}
+
+#btnMenu {
+    display: none;
+}
+
+.toggleMenu {
+    font-size: 22px;
+    display: none;
+}
+
+@media only screen and (max-width: 510px) {
+    .toggleMenu {
+        display: block;
+        margin-right: 1rem;
+    }
+    .links {
+        position: fixed;
+        background-color: #21212c;
+        min-height: calc(100vh - 51px);
+        flex-flow: column;
+        width: 100%;
+        top: 51px;
+        left: 100%;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+    .links a {
+        width: 100%;
+        text-align: center;
+    }
+    .links a:hover {
+        background-color: #316eb3;
+    }
+    #btnMenu:checked~.links {
+        left: 0;
+    }
+}
+
+header {
+    padding-left: 12px;
+    position: absolute;
+    bottom: 10%;
+    position: 10px 10px 10px 10px;
+}
+
+header .drop-btn {
+    width: 200%;
+    background: #242526;
+    border-radius: 9999px;
+    line-height: 55px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b0b3b8;
+    padding: 0 20px;
+}
+
+header .drop-btn span {
+    float: right;
+    line-height: 50px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+header .tooltip {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    height: 15px;
+    width: 15px;
+    background: #242526;
+    transform: rotate(45deg);
+    display: none;
+}
+
+header .tooltip.show {
+    display: block;
+}
+
+header .wrapper {
+    position: absolute;
+    top: 65px;
+    display: flex;
+    width: 390px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #242526;
+    display: none;
+    transition: all 0.3s ease;
+    margin-bottom: 5rem;
+}
+
+header .wrapper.show {
+    display: block;
+    display: flex;
+}
+
+.wrapper ul {
+    width: 400px;
+    list-style: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.wrapper ul li {
+    line-height: 55px;
+}
+
+.wrapper ul li a {
+    position: relative;
+    color: #b0b3b8;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.wrapper ul li:hover a {
+    background: #3A3B3C;
+}
+
+ul li a .icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 13px;
+    background: #ffffff1a;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li a .icon span {
+    line-height: 40px;
+    font-size: 20px;
+    color: #b0b3b8;
+}
+
+ul li a i {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    pointer-events: none;
+}
+
+.wrapper ul.Season1-drop,
+.wrapper ul.Season2-drop,
+.wrapper ul.Season3-drop,
+.wrapper ul.Season4-drop,
+.wrapper ul.Season5-drop,
+.wrapper ul.Season6-drop,
+.wrapper ul.Season7-drop,
+.wrapper ul.Season8-drop,
+.wrapper ul.Season9-drop,
+.wrapper ul.Season10-drop {
+    display: none;
+}
+
+.wrapper .arrow {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #b0b3b8;
+    cursor: pointer;
+}
+
+.wrapper .arrow span {
+    margin-right: 15px;
+}
