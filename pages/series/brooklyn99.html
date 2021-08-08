@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Brooklyn Nine-Nine - Download</title>
+    <link rel="stylesheet" href="/pages/cssfiles/dlpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu" onclick="dropdownhide()">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
+    </nav>
+    <!--Main-->
+    <div class="container">
+        <div class="poster">
+            <img src="/images/brooklyn99.jpg" ">
+            <h2 style="color: white; text-align: center;">Brooklyn Nine-Nine (2013-2022)</h2>
+            <p style="text-align: center;">
+                Comedy series following the exploits of Det. Jake Peralta and his diverse, lovable colleagues as they police the NYPD's 99th Precinct.</p><br>
+            <p style="text-align: center;">Rating : 8.4/10&nbsp;<i class="fa fa-star"></i></p>
+            <p style="text-align: center;">Seasons : 08 &nbsp;<i class="fa fa-clock"></i></p>
+            <p style="text-align: center;">Resolution : 1080p &nbsp;<i class="fa fa-expand"></i></p>
+            <p style="text-align: center;">Genres : Crime, Sitcom, Comedy, Police Procedural&nbsp;<i class="fas fa-money-check"></i></p>
+        </div>
+    </div>
+    <div class="download" id="mydropdown">
+        <div class="menu" id="menu-drop">
+           <i class="fa fa-download">&nbsp;<span class="select">Download</span></i>
+           <div class="menu__icon-box">
+               <div class="menu__icon"></div>
+           </div>
+           <div class="menu__dropdown">
+
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/vDwlTY" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 01</a>
+		    </div>
+     
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/TNXWU5" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 02</a>
+			</div>
+     
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/yKF46h" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 03</a>
+			</div>
+     
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/phNdp9" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 04</a>
+			</div>
+     
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/W3fhPZ3" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 05</a>
+			</div>
+     
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/vagXW2" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 06</a>
+			</div>
+     
+            <div class="menu__dropdown-option">
+            <a href="https://ouo.io/T0NA2i" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 07</a>
+			</div>
+     
+            <div class="menu__dropdown-option">
+            <a href="#" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+            Season 08 (Coming this 12 of August)</a>
+			</div>
+     
+ 
+	 
+     <script>
+        const menu = document.querySelector('.menu');
+     const option = document.querySelector('.menu span')
+     
+     menu.addEventListener('click', e => {
+       if (e.target.classList.contains('menu') || e.target.classList.contains('select') || e.target.classList.contains('menu__icon')) {
+           menu.classList.toggle('menu__active');
+       }
+     
+       if (e.target.classList.contains('menu__dropdown-option')) {
+           option.innerHTML = e.target.textContent;
+           menu.classList.remove('menu__active');
+       }
+     })
+     </script>
+     
+    <script src="/pages/scripts/contenthide.js"></script>
+
+    <footer style="text-align: center;">
+        <p>&copy 2021 Film Fanatics, Inc.</p>
+    </footer>
+</body>
+
+</html>

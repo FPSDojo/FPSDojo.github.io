@@ -6,175 +6,185 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-
+body{
+    background-color: #000;
+}
 nav {
-    background: #222222;
-    padding: 10px 40px 10px 70px;
-    border: 1px solid #000;
-    border-left: none;
-    border-right: none;
-    z-index: 20;
-    position: sticky;
-    top: 0;
-}
-
-nav ul {
+    color: rgb(66, 65, 65);
     display: flex;
-    list-style: none;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    max-width: 1144px;
+    margin: auto;
+    z-index: 999999px;
 }
 
-nav ul li.logo {
-    flex: 1;
-    font-size: 30px;
-    font-weight: 700;
+#logo {
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
 }
 
-nav ul div.items {
-    padding: 0 25px;
-    display: inline-flex;
-}
+.links {
 
-nav ul div.items a {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 0 12px;
-}
-
-nav ul div.items a:hover {
-    color: cyan;
-}
-
-nav ul .search-icon {
-    height: 40px;
-    width: 240px;
     display: flex;
-    background: #f2f2f2;
-    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul .search-icon input {
-    height: 100%;
-    width: 200px;
-    border: none;
-    outline: none;
-    padding: 0 10px;
-    color: #000;
-    font-size: 16px;
-    border-radius: 5px 0 0 5px;
+.links a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 
-nav ul .search-icon .icon {
-    height: 100%;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid #cccccc;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+.links a:hover {
+    background-color: #316eb3;
+    text-decoration: underline;
 }
 
-nav ul .search-icon .icon:hover {
-    background: #e6e6e6;
-}
-
-nav ul .search-icon .icon span {
-    color: #222222;
-    font-size: 18px;
-}
-
-nav ul li.btn {
-    font-size: 29px;
-    flex: 1;
-    padding: 0 40px;
+#btnMenu {
     display: none;
 }
 
-nav ul li.btn span {
-    height: 42px;
-    width: 42px;
-    text-align: center;
-    line-height: 42px;
-    border: 1px solid #151515;
-    border-radius: 5px;
-    cursor: pointer;
+.toggleMenu {
+    font-size: 22px;
+    display: none;
 }
 
-nav ul li.btn span.show:before {
-    content: "\f00d";
-}
-
-@media screen and (max-width: 1052px) {
-    nav {
-        padding: 10px 40px 10px 0px;
-    }
-    nav ul li.logo {
-        display: none;
-    }
-    nav ul div.items {
-        flex: 4;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    nav ul li.btn {
+@media only screen and (max-width: 510px) {
+    .toggleMenu {
         display: block;
+        margin-right: 1rem;
     }
-    nav {
-        z-index: 1;
-        padding: 9px 40px 9px 0;
-    }
-    nav ul div.items {
-        z-index: -1;
+    .links {
         position: fixed;
-        top: -220px;
-        right: 0;
+        background-color: #21212c;
+        min-height: calc(100vh - 51px);
+        flex-flow: column;
         width: 100%;
-        background: #222222;
-        display: inline-block;
-        transition: top 0.4s;
+        top: 51px;
+        left: 100%;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
     }
-    nav ul div.items.show {
-        top: 3.8rem;
-        z-index: 20;
-    }
-    nav ul div.items li {
+    .links a {
+        width: 100%;
         text-align: center;
-        line-height: 30px;
-        margin: 30px 0;
     }
-    nav ul div.items li a {
-        font-size: 19px;
+    .links a:hover {
+        background-color: #316eb3;
+    }
+    #btnMenu:checked~.links {
+        left: 0;
     }
 }
 
-@media screen and (max-width: 405px) {
-    nav ul {
-        flex-wrap: nowrap;
-    }
-    nav ul li.search {
-        width: 50vmin;
-    }
-    nav ul li input {
-        width: 40vmin;
-    }
-    nav ul li .search-icon {
-        width: 10vmin;
-    }
-}
+/*Simple Card*/
+
+.team{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .tcontainer{
+    width: 100%;
+    height: 13rem;
+  }
+
+  .theader{
+    width: 100%;
+    height: 5rem;
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+  }
+
+  .ttitle{
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .tpara{
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .ticons{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+
+  }
+
+
+  .ticons a{
+    padding-top: 2rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+
+  .ticons a h1{
+   padding-left: 5px;
+    font-size: 1rem;
+
+  }
+
+  .teamprofile{
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .pheader{
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+
+  }
+
+  .position{
+    width: 100%;
+    height: 2rem;
+    font-size: 2rem;
+    color: hsl(0, 2%, 70%);
+
+  }
+
+  .pimg{
+    padding-top: 1rem;
+    object-fit: contain;
+    width: 8rem;
+    height: 8rem;
+  }
+
 
 
 /* /--Profile Card--/ */
 
-.wrapper-grid {
+/*.wrapper-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20rem);
     justify-content: center;
 }
 
 .container {
+    z-index: -1;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
     text-align: center;
@@ -221,3 +231,9 @@ nav ul li.btn span.show:before {
 footer p {
     color: #000;
 }
+
+@MEDIA only screen and (min-width: 1280px) {
+    .links a {
+        color: black;
+    }
+}*/

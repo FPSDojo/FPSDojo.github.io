@@ -6,72 +6,71 @@
     <title>Film Fanatics</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
     <nav>
-        <ul>
-            <!-- <img src="images/FF.jpg" width="50px" /> -->
-            <li class="logo"><a href="index.html" style="text-decoration: none;">Film Fanatics </a> </li>
-            <li class="btn"><span class="fas fa-bars"></span></li>
-            <div class="items">
-                <li><i class="fas fa-home"><a href="/index.html">Home</a></i></li>
-                <li><i class="fas fa-tv"><a href="/series.html">TV Series</a></i></li>
-                <li><i class="fas fa-film"><a href="/movies.html">Movies</a></i></li>
-                <li><i class="fas fa-address-book"><a href="/aboutus.html">About Us</a></i></li>
-            </div>
-            <li class="search-icon">
-                <input type="text" placeholder="Under Maintenance..">
-                <label class="icon">
-               <span class="fas fa-search"></span>
-               </label>
-            </li>
-        </ul>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a></i>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
     </nav>
     <!--Main-->
     <div>
         <section>
             <h2>~ Newly Added&nbsp;<i class="fas fa-plus-circle"></h2></i>
                 <navc>
-                    <a href="/pages/blackwidow.html" style="text-decoration: none; "><img src="/images/blackwidow.jpg"> <br> Black Widow </a>
-                    <a href="# " style="text-decoration: none; "><img src="/images/greenland.jpg" /><br>Greenland </a>
-                    <a href="# " style="text-decoration: none;"><img src="/images/matrix.jpg " /> The Matrix </a>
-                    <a href="# " style="text-decoration: none;"><img src="/images/dexter.jpg" /> Dexter</a>
-                    <a href="# " style="text-decoration: none;"><img src="/images/peakyblinders.jpg " /> Peaky Blinders </a>
+
+                    <a href="/pages/series/toffice.html" style="text-decoration: none;"><img src="/images/theoffice.jpg" /> The Office </a>
+                    <a href="/pages/series/mbsociety.html" style="text-decoration: none;"><img src="/images/mbsociety.JPG" /> The Mysterious Benedict Society</a>
+                    <a href="/pages/series/surgeonscut.html style="text-decoration: none;"><img src="/images/surgeonscut.jpg" /> The Surgeon's Cut </a>
+                    <a href="/pages/series/locnkey.html" style="text-decoration: none; "><img src="/images/locnkey.jpg"> <br> Locke & Key </a>
+                    <a href="/pages/series/hosteldaze.html" style="text-decoration: none; "><img src="/images/hosteldaze.jpg" />Hostel Daze (S2) </a>
                 </navc>
         </section>
         <section>
             <h2>~ Top Rated&nbsp;<i class="fas fa-fire"></i></h2>
             <navc>
-                <a href="/pages/got.html " style="text-decoration: none;"><img src="/images/got-dl.jpg " />Game Of Thrones</a>
-                <a href="# " style="text-decoration: none;"><img src=" /images/chernobyl.jpg " /> Chernobyl</a>
-                <a href="# " style="text-decoration: none;"><img src="/images/bb.jpg " /> Breaking bad </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/bcsaul.jpg " /> Better Call Saul </a>
-                <a href="/pages/tenet.html" style="text-decoration: none;"><img src="/images/tenet.jpg" />Tenet </a>
+                <a href="/pages/series/got.html " style="text-decoration: none;"><img src="/images/got-dl.jpg " />Game Of Thrones</a>
+                <a href="/pages/series/chernobyl.html" style="text-decoration: none;"><img src=" /images/chernobyl.jpg " /> Chernobyl</a>
+                <a href="/pages/series/bb.html" style="text-decoration: none;"><img src="/images/bb.jpg " /> Breaking bad </a>
+                <a href="/pages/series/bcsaul.html" style="text-decoration: none;"><img src="/images/bcsaul.jpg " /> Better Call Saul </a>
+                <a href="/pages/movies/tenet.html" style="text-decoration: none;"><img src="/images/tenet.jpg" />Tenet </a>
             </navc>
 
         </section>
         <section>
             <h2>~ Trending&nbsp;<i class="fas fa-chart-line"></i></h2>
             <navc>
-                <a href="# " style="text-decoration: none;"><img src="/images/fm.jpg " /> The Family Man </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/strangerthings.png" /> The Stranger Things </a>
-                <a href="/pages/friends.html" style="text-decoration: none;"><img src="/images/friends.jpg " />Friends</a>
-                <a href="# " style="text-decoration: none;"><img src="/images/interstaller.jpg " /> Interstaller</a>
-                <a href="# " style="text-decoration: none;"><img src="/images/lotr.jpg " /> The Lords Of the Ring </a>
+                <a href="/pages/movies/ssqaud21.html" style="text-decoration: none;"><img src="/images/ssquad.jpg " /> The Lords Of the Ring </a>
+                <a href="/pages/series/fm.html" style="text-decoration: none;"><img src="/images/fm.jpg " /> The Family Man </a>
+                <a href="/pages/series/stthings.html" style="text-decoration: none;"><img src="/images/strangerthings.png" /> The Stranger Things </a>
+                <a href="/pages/series/friends.html" style="text-decoration: none;"><img src="/images/friends.jpg " />Friends</a>
+                <a href="/pages/movies/blackwidow.html" style="text-decoration: none;"><img src="/images/blackwidow.jpg " /> Black Widow</a>
             </navc>
 
         </section>
 
-
+<!--
         <script>
             $('nav ul li.btn span').click(function() {
                 $('nav ul div.items').toggleClass("show ");
                 $('nav ul li.btn span').toggleClass("show ");
             });
-        </script>
+        </script>-->
+
         <footer style="text-align: center; ">
             <p>&copy 2021 Film Fanatics, Inc.</p>
 

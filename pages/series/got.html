@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Of Thrones - Download</title>
+    <link rel="stylesheet" href="/pages/cssfiles/dlpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu" onclick="dropdownhide()">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
+    </nav>
+    <!--Main-->
+    <div class="container">
+        <div class="poster">
+            <img src="/images/got-dl.jpg" ">
+            <h2 style="color: white; text-align: center;">Game Of Thrones (2011-2019)</h2>
+            <p style="text-align: center;">
+                Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is an adaptation of A Song of Ice and Fire. &nbsp;Nine noble families fight for control over the lands of Westeros, while an ancient enemy
+                returns after being dormant for millennia.</p><br>
+            <p style="text-align: center;">Rating : 9.2/10&nbsp;<i class="fa fa-star"></i></p>
+            <p style="text-align: center;">Seasons : 08 &nbsp;<i class="fa fa-clock"></i></p>
+            <p style="text-align: center;">Resolution : 1080p &nbsp;<i class="fa fa-expand"></i></p>
+            <p style="text-align: center;">Genres : Action, Drama, Thriller, Epic, Fantasy, Suspense,  Adventure, Tragedy&nbsp;<i class="fas fa-money-check"></i></p>
+        </div>
+    </div>
+    <div class="download" id="mydropdown">
+        <div class="menu" id="menu-drop">
+           <i class="fa fa-download">&nbsp;<span class="select">Download</span></i>
+           <div class="menu__icon-box">
+               <div class="menu__icon"></div>
+           </div>
+           <div class="menu__dropdown">
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/8iELYS" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                 Season 01</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/5c5HR6" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 02</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/aUik8S" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 03</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/bn2zIA" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 04</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/2tzSPC" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 05</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/2tzSPC" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 06</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/5vgD1X" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 07</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/YfgtD4" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 08</a></div>
+     
+             <!-- <div class="menu__dropdown-option">
+                <a href="https://ouo.io/zdRQKx" style="text-decoration: none; color: rgb(197, 188, 188);">
+                 Episode 9</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/CeZu5e" style="text-decoration: none; color: rgb(197, 188, 188);">
+              Episode 10</a></div>
+              
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/ZY5dY4" style="text-decoration: none; color: rgb(197, 188, 188);">
+              Episode 11</a></div>
+              
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/brG6mb" style="text-decoration: none; color: rgb(197, 188, 188);">
+              Episode 12</a></div>
+      -->
+           
+             
+           </div>
+         </div>
+     </div>
+     <script>
+        const menu = document.querySelector('.menu');
+     const option = document.querySelector('.menu span')
+     
+     menu.addEventListener('click', e => {
+       if (e.target.classList.contains('menu') || e.target.classList.contains('select') || e.target.classList.contains('menu__icon')) {
+           menu.classList.toggle('menu__active');
+       }
+     
+       if (e.target.classList.contains('menu__dropdown-option')) {
+           option.innerHTML = e.target.textContent;
+           menu.classList.remove('menu__active');
+       }
+     })
+     </script>
+     
+    <script src="/pages/scripts/contenthide.js"></script>
+
+    <footer style="text-align: center;">
+        <p>&copy 2021 Film Fanatics, Inc</p>
+    </footer>
+</body>
+
+</html>

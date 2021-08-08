@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Friends - Download</title>
+    <link rel="stylesheet" href="/pages/cssfiles/dlpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu" onclick="dropdownhide()">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
+    </nav>
+    <!--Main-->
+    <div class="container">
+        <div class="poster">
+            <img src="/images/friends.jpg" ">
+            <h2 style="color: white; text-align: center;">Friends (1994-2004)</h2>
+            <p style="text-align: center;">Friends is a 90's Comedy TV show, based in Manhattan, about 6 friends who go through just about every life experience imaginable together;</p><br>
+            <p style="text-align: center;">Rating : 8.9/10&nbsp;<i class="fa fa-star"></i></p>
+            <p style="text-align: center;">Seasons : 10 &nbsp;<i class="fa fa-clock"></i></p>
+            <p style="text-align: center;">Resolution : 1080p &nbsp;<i class="fa fa-expand"></i></p>
+            <p style="text-align: center;">Genres : Romance, Comedy, Sitcom&nbsp;<i class="fas fa-money-check"></i></p>
+            <h3 style="text-align: center;"><i class="fas fa-angle-double-right">&nbsp;</i><a href="/pages/movies/friendsmovie.html" style="text-decoration: none; color: white;">Friends The Reunion Movie</a>&nbsp;<i class="fas fa-angle-double-left"></i> </h3>
+        </div>
+    </div>
+    <div class="download" id="mydropdown">
+        <div class="menu" id="menu-drop">
+           <i class="fa fa-download">&nbsp;<span class="select">Download</span></i>
+           <div class="menu__icon-box">
+               <div class="menu__icon"></div>
+           </div>
+           <div class="menu__dropdown">
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/yigb8s" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                 Season 01</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/4SaePo" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 02</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/hVn5gc" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 03</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/UWAZaH" target="_blank"  style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 04</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/7eh6hS" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 05</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/vQV0i6" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 06</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/qa3MCdv" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 07</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/EgCjXu" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 08</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/u6KnT09" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 09</a></div>
+     
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/isZJJd" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                    Season 10</a></div>
+              
+             <!-- <div class="menu__dropdown-option">
+                <a href="https://ouo.io/ZY5dY4" style="text-decoration: none; color: rgb(197, 188, 188);">
+              Episode 11</a></div>
+              
+             <div class="menu__dropdown-option">
+                <a href="https://ouo.io/brG6mb" style="text-decoration: none; color: rgb(197, 188, 188);">
+              Episode 12</a></div>
+      -->
+           </div>
+         </div>
+     </div>
+     <script>
+        const menu = document.querySelector('.menu');
+     const option = document.querySelector('.menu span')
+     
+     menu.addEventListener('click', e => {
+       if (e.target.classList.contains('menu') || e.target.classList.contains('select') || e.target.classList.contains('menu__icon')) {
+           menu.classList.toggle('menu__active');
+       }
+     
+       if (e.target.classList.contains('menu__dropdown-option')) {
+           option.innerHTML = e.target.textContent;
+           menu.classList.remove('menu__active');
+       }
+     })
+     </script>
+     
+    <script src="/pages/scripts/contenthide.js"></script>
+
+    <footer style="text-align: center;">
+        <p>&copy 2021 Film Fanatics, Inc</p>
+    </footer>
+</body>
+
+</html>

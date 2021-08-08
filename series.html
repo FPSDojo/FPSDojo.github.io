@@ -12,66 +12,64 @@
 
 <body>
     <nav>
-        <ul>
-            <li class="logo"><a href="/index.html" style="text-decoration: none;">Film Fanatics </a> </li>
-            <li class="btn"><span class="fas fa-bars"></span></li>
-            <div class="items">
-                <li><i class="fas fa-home"><a href="/index.html">Home</a></i></li>
-                <li><i class="fas fa-tv"><a href="/series.html">TV Series</a></i></li>
-                <li><i class="fas fa-film"><a href="/movies.html">Movies</a></i></li>
-                <li><i class="fas fa-address-book"><a href="/aboutus.html">About Us</a></i></li>
-            </div>
-            <li class="search-icon">
-                <input type="text" placeholder="Under Maintenance..">
-                <label class="icon">
-               <span class="fas fa-search"></span>
-               </label>
-            </li>
-        </ul>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
     </nav>
     <!--Main-->
     <div>
         <section>
             <br>
-            <p><a href="#">View All</a></p>
+            <p style="text-align: center;"><a href="/pages/allseries.html">View All</a></p>
             <br>
             <navc>
-                <a href="# " style="text-decoration: none;"><img src="/images/acarbon.jpg" /> Altered Carbon </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/bobrothers.jpg" /> Band Of Brothers </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/peakyblinders.jpg " /> Peaky Blinders </a>
-                <a href="/pages/friends.html" style="text-decoration: none;"><img src="/images/friends.jpg " />Friends</a>
-                <a href="# " style="text-decoration: none;"><img src="/images/mindhunter.jpg" /> The Mindhunter </a>
+                <a href="/pages/series/altcarbon.html" style="text-decoration: none;"><img src="/images/acarbon.jpg" /> Altered Carbon </a>
+                <a href="/pages/series/bofbrothers.html" style="text-decoration: none;"><img src="/images/bobrothers.jpg" /> Band Of Brothers </a>
+                <a href="/pages/series/peakyblinders.html" style="text-decoration: none;"><img src="/images/peakyblinders.jpg " /> Peaky Blinders </a>
+                <a href="/pages/series/friends.html" style="text-decoration: none;"><img src="/images/friends.jpg " />Friends</a>
+                <a href="/pages/series/mhunter.html" style="text-decoration: none;"><img src="/images/mindhunter.jpg" /> The Mindhunter </a>
             </navc>
 
         </section>
 
         <section>
             <navc>
-                <a href="/pages/got.html " style="text-decoration: none;"><img src="/images/got-dl.jpg " /> Game Of Thrones</a>
-                <a href="# " style="text-decoration: none;"><img src=" /images/chernobyl.jpg " /> Chernobyl</a>
-                <a href="# " style="text-decoration: none;"><img src="/images/bb.jpg " /> Breaking Bad </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/prisonbreak.jpg" /> Prison Break </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/vikings.jpg" /> Vikings </a>
+                <a href="/pages/series/got.html " style="text-decoration: none;"><img src="/images/got-dl.jpg " /> Game Of Thrones</a>
+                <a href="/pages/series/chernobyl.html" style="text-decoration: none;"><img src=" /images/chernobyl.jpg " /> Chernobyl</a>
+                <a href="/pages/series/bb.html" style="text-decoration: none;"><img src="/images/bb.jpg " /> Breaking Bad </a>
+                <a href="/pages/series/prisonbreak.html" style="text-decoration: none;"><img src="/images/prisonbreak.jpg" /> Prison Break </a>
+                <a href="/pages/series/vikings.html" style="text-decoration: none;"><img src="/images/vikings.jpg" /> Vikings </a>
             </navc>
         </section>
 
         <section>
             <navc>
-                <a href="# " style="text-decoration: none;"><img src="/images/fm.jpg " /> The Family Man </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/bcsaul.jpg " /> Better Call Saul</a>
-                <a href="# " style="text-decoration: none;"><img src="/images/dark.jpg" /> Dark </a>
-                <a href="#" style="text-decoration: none;"><img src="/images/lucifer.jpg" /> Lucifer </a>
-                <a href="# " style="text-decoration: none;"><img src="/images/handmaids.jpg"> The Handmaid's Tale</a>
+                <a href="/pages/series/fm.html" style="text-decoration: none;"><img src="/images/fm.jpg " /> The Family Man </a>
+                <a href="/pages/series/bcsaul.html" style="text-decoration: none;"><img src="/images/bcsaul.jpg " /> Better Call Saul</a>
+                <a href="/pages/series/dark.html" style="text-decoration: none;"><img src="/images/dark.jpg" /> Dark </a>
+                <a href="/pages/series/lucifer.html" style="text-decoration: none;"><img src="/images/lucifer.jpg" /> Lucifer </a>
+                <a href="/pages/series/handmaids.html" style="text-decoration: none;"><img src="/images/handmaids.jpg"> The Handmaid's Tale</a>
             </navc>
         </section>
 
 
-        <script>
+        <!--<script>
             $('nav ul li.btn span').click(function() {
                 $('nav ul div.items').toggleClass("show ");
                 $('nav ul li.btn span').toggleClass("show ");
             });
-        </script>
+        </script>-->
+
         <footer style="text-align: center; ">
             <p>&copy 2021 Film Fanatics, Inc.</p>
 

@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>About Us</title>
     <link rel="stylesheet" href="/pages/cssfiles/aboutus.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 </head>
-
-<body>
+<body >
     <nav>
-        <ul>
-            <!-- <img src="images/FF.jpg" width="50px" /> -->
-            <li class="logo"><a href="index.html" style="text-decoration: none;">Film Fanatics </a> </li>
-            <li class="btn" id="bar"><span class="fas fa-bars"></span></li>
-            <div class="items">
-                <li><i class="fas fa-home"><a href="/index.html">Home</a></i></li>
-                <li><i class="fas fa-tv"><a href="/series.html">TV Series</a></i></li>
-                <li><i class="fas fa-film"><a href="/movies.html">Movies</a></i></li>
-                <li><i class="fas fa-address-book"><a href="aboutus.html">About Us</a></i></li>
-            </div>
-            <li class="search-icon">
-                <input type="search" placeholder="Under Maintenance..">
-                <label class="icon">
-                    <span class="fas fa-search"></span>
-                </label>
-            </li>
-        </ul>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu">
+            <i class="fas fa-bars" style="color: white;"></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
     </nav>
-    <div class="wrapper-grid">
-        <div class="container">
-            <div class='banner-img'></div>
-            <img src='/images/js.jpg' alt='profile image' class="profile-img">
-            <br></br>
-            <br></br>
-            <h1 class="name">Khan Akhtar</h1>
-            <p class="description">Web Developer, Content Manager</p>
-            <button class='btn GFG' onclick="window.location.href = 'https://t.me/qewertyy';">Contact</button>
+
+    <div class="team" style=" background: linear-gradient( rgba(0, 0, 0, 0.253), #000000), url('images/teambg.jpg');">
+    <div class="tcontainer">
+        <div class="theader">
+            <h1 class="ttitle" onclick="window.location.href='/index.html';">Film Fanatics</h1>
         </div>
-
-        <div class="container">
-            <div class='banner-img'></div>
-            <img src='https://images.unsplash.com/photo-1444011283387-7b0f76371f12?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='profile image' class="profile-img">
-            <h1 class="name">Dastagir Shaikh</h1>
-            <p class="description">Web Developer, Content Manager</p>
-            <button class='btn GFG' onclick="window.location.href = 'https://t.me/Kuroski_Ichigo';">Contact</button>
+        <div class="ticons">
+            <a href="https://t.me/FilmFanaticsXD">
+                <img src="images/telegram.png" style="height: 1rem;">
+                <h1>Telegram</h1>
+            </a>
         </div>
+    </div>
 
-
-        <style>
-            .GFG {
-                text-align: center;
-                display: inline-block;
-                cursor: pointer;
-            }
-        </style>
-        <script src="/pages/scripts/navres.js"></script>
-</body>
+    <!--profile-->
+    <div class="teamprofile">
+        <div class="pheader">
+            <h1 class="position">Dev</h1>
+            <a href="https://t.me/qewertyy" style="text-decoration: none; color: hsl(0, 2%, 70%);">
+                <img class="pimg" src="images/anonymous.png">
+                <h3>Anonymous</h3>
+            </a>
+            <a href="https://t.me/Kuroski_Ichigo" style="text-decoration: none; color: hsl(0, 2%, 70%);">
+                <img class="pimg" src="images/ichigo.jpg">
+                <h3>Kurosaki Ichigo</h3>
+            </a>
+            <br>
+            <h1 class="position" >Mods</h1>
+            <a href="https://t.me/sad_sensei" style="text-decoration: none;color: hsl(0, 2%, 70%);">
+                <img class="pimg" src="images/hinata.jpg">
+                <h3>Hinata Shouyou</h3>
+            </a>
+            <a href="https://t.me/Luffy_taro_1" style="text-decoration: none; color: hsl(0, 2%, 70%);">
+                <img class="pimg" src="images/luffy.jpg">
+                <h3>Luffy Taro</h3>
+            </a>
+        </div>
+    </div>
 </div>
-<footer style="text-align: center;" ">
-    <p>&copy 2021 Film Fanatics, Inc.</p>
-</footer>
-</body>
 
+</body>
 </html>
