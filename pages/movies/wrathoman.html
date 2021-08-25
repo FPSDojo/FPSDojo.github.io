@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wrath Of Man - Download</title>
+    <link rel="stylesheet" href="/pages/cssfiles/dlpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            Film Fanatics
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu" onclick="dropdownhide()">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>
+			<a href="/fps.html">60fps</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="poster">
+            <img src="/images1/wrathoman.jpg">
+            <h2 style="color: white; text-align: center;">Wrath Of Man (2021)</h2>
+            <p style="text-align: center;">The plot follows H, a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week.</p><br>
+            <p style="text-align: center;">Rating : 7.2/10&nbsp;<i class="fa fa-star"></i></p>
+            <p style="text-align: center;">Duration : 119 Minutes&nbsp;<i class="fa fa-clock"></i></p>
+            <p style="text-align: center;">Resolution : 1080p BluRay&nbsp;<i class="fa fa-expand"></i></p>
+            <p style="text-align: center;">Genres : Action, Crime, Thriller&nbsp;<i class="fas fa-money-check"></i></p>
+        </div>
+        <div class="download" id="mydropdown">
+            <div class="menu" id="menu-drop">
+               <i class="fa fa-download">&nbsp;<span class="select">Download</span></i>
+               <div class="menu__icon-box">
+                   <div class="menu__icon"></div>
+               </div>
+               <div class="menu__dropdown">
+                <div class="menu__dropdown-option">
+                <a href="https://ouo.io/s2R7oE" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                 1080p BluRay - GDrive</a>
+                </div>
+
+               </div>
+             </div>
+         </div>
+
+         <script>
+            const menu = document.querySelector('.menu');
+         const option = document.querySelector('.menu span')
+
+         menu.addEventListener('click', e => {
+           if (e.target.classList.contains('menu') || e.target.classList.contains('select') || e.target.classList.contains('menu__icon')) {
+               menu.classList.toggle('menu__active');
+           }
+
+           if (e.target.classList.contains('menu__dropdown-option')) {
+               option.innerHTML = e.target.textContent;
+               menu.classList.remove('menu__active');
+           }
+         })
+         </script>
+
+        <script src="/pages/scripts/contenthide.js"></script>
+
+
+    <footer style="text-align: center; ">
+        <p>&copy 2021 Film Fanatics, Inc.</p>
+
+    </footer>
+</body>
+
+</html>
