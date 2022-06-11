@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>SpiderMan - 【﻿ＦＰＳ 道場】</title>
+    <link rel="stylesheet" href="/pages/cssfiles/dlpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <nav>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            【﻿ＦＰＳ 道場】
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu" onclick="dropdownhide()">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <!--<a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>-->
+			<a href="https://anihubx.github.io">Anime Encodes</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="poster">
+            <img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654945837/spiderverse.jpg">
+            <h2 style="color: white; text-align: center;">Spider-Man into the Spider-Verse (2018)</h2>
+            <p style="text-align: center;">Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</p><br>
+            <p style="text-align: center;">Rating : 8.4/10&nbsp;<i class="fa fa-star"></i></p>
+            <p style="text-align: center;">Duration : 117 Minutes&nbsp;<i class="fa fa-clock"></i></p>
+            <p style="text-align: center;">Resolution : 1080p 60fps&nbsp;<i class="fa fa-expand"></i></p>
+            <p style="text-align: center;">Genres : Action, Animation, Adventure&nbsp;<i class="fas fa-money-check"></i></p>
+        </div>
+        <div class="download" id="mydropdown">
+            <div class="menu" id="menu-drop">
+               <i class="fa fa-download">&nbsp;<span class="select">Download</span></i>
+               <div class="menu__icon-box">
+                   <div class="menu__icon"></div>
+               </div>
+               <div class="menu__dropdown">
+                <div class="menu__dropdown-option">
+                <a href="https://ouo.io/k60QAPG" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                 1080p 60fps - GDrive</a>
+                </div>
+               </div>
+             </div>
+         </div>
+
+         <script>
+            const menu = document.querySelector('.menu');
+         const option = document.querySelector('.menu span')
+
+         menu.addEventListener('click', e => {
+           if (e.target.classList.contains('menu') || e.target.classList.contains('select') || e.target.classList.contains('menu__icon')) {
+               menu.classList.toggle('menu__active');
+           }
+
+           if (e.target.classList.contains('menu__dropdown-option')) {
+               option.innerHTML = e.target.textContent;
+               menu.classList.remove('menu__active');
+           }
+         })
+         </script>
+
+        <script src="/pages/scripts/contenthide.js"></script>
+
+
+    <footer style="text-align: center; ">
+        <br/>
+        <p>&copy <script> document.write(new Date().getFullYear()); </script> 【﻿ＦＰＳ 道場】, All Rights Reserved.</p>
+
+    </footer>
+</body>
+
+</html>
