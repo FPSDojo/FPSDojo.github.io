@@ -7,14 +7,15 @@ function dropdownhide() {
     }
 }
 
-//function dropdownhide1() {
-//    var y = document.getElementById("mydropdown ");
-//    if (y.style.display === "none") {
-//        y.style.display = "block";
-//    } else {
-//        y.display.display = "none";
-//    }
-//}
+function cardshide() {
+   var y = document.getElementById("");
+   if (y.style.display === "none") {
+       y.style.display = "block";
+   } else {
+       y.display.display = "none";
+   }
+}
+
 function bodyhide() {
     var x = document.getElementById("body1");
     if (x.style.display === "none") {

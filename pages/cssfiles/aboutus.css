@@ -8,7 +8,8 @@
 }
 body {
     align-items: center;
-    background-color: #000;
+    background: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    color: white;
     font-family: "Merriweather", serif;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,7 +18,8 @@ body {
   }
 body1 {
     align-items: center;
-    background-color: #000;
+    background: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    color: white;
     display: flex;
     font-family: "Merriweather", serif;
     flex-wrap: wrap;
@@ -170,7 +172,7 @@ nav {
     }
     .links {
         position: fixed;
-        background-color: #21212c;
+        background: rgb(44, 43, 43);
         min-height: calc(100vh - 51px);
         flex-flow: column;
         width: 100%;

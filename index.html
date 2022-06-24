@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <title>【﻿ＦＰＳ 道場】</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./pages/cssfiles/slider.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="https://cdn.rawgit.com/JacobLett/bootstrap4-latest/master/bootstrap-4-latest.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-    <link rel="shortcut icon" href="./images/FPSDojo.ico" type="image/x-icon" />
+    <!--Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="./Icons/favicon.ico" type="image/x-icon" />
+
 </head>
 
 <body>
@@ -30,50 +38,76 @@
             <a href="/aboutus.html">About Us</a>
         </div>
     </nav>
-    <!--Main-->
-    <div>
-        <section>
-            <h2>&nbsp;Recently Added&nbsp;<i class="fas fa-plus-circle"></h2></i>
-                <navc>
-                    <a href="/pages/thebatman.html" style="text-decoration: none;"><img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654939148/thebatman22.jpg"/><br/>The Batman 2022</a>
-                    <a href="/pages/upgrade.html" style="text-decoration: none;"><img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654944595/upgrade.jpg" /> Upgrade </a>
-                    <a href="/pages/spidermanisverse.html" style="text-decoration: none;"><img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654945584/spidermanintoverse.jpg" /> Spider-Man into the Spider-Verse </a> 
-                    <a href="/pages/pacificrim.html" style="text-decoration: none; "><img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654948635/pacificrim_.jpg" />Pacific Rim </a>
-                </navc>
+
+    <!--Main--><h2>&nbsp;Recently Added&nbsp;<i class="fas fa-plus-circle"></h2></i>
+    <section class="items">
+        <div class="carouselOfImages">
+          <div class="carouselImage" style="background-size:cover;">
+            <img onclick="window.location.href='./pages/thebatman.html';" src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654939148/thebatman22.jpg"/>
+            <article style="padding-left: 35px;"><a href="./pages/thebatman.html">The Batman</a></article>
+          </div>
+          <div class="carouselImage" style="background-size:cover;">
+            <img onclick="window.location.href='./pages/upgrade.html';"  src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654944595/upgrade.jpg"/>
+            <article style="padding-left: 48px;"><a href="./pages/upgrade.html">Upgrade</a></article>
+          </div>
+         <div class="carouselImage" style="background-size:cover;">
+            <img onclick="window.location.href='./pages/spidermanisverse.html';"  src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654945584/spidermanintoverse.jpg"/>
+            <article><a href="./pages/spidermanisverse.html">SpiderMan into the Spider-Verse</a></article>
+          </div>
+          <div class="carouselImage" style="background-size:cover;">
+            <img onclick="window.location.href='./pages/tragnarok.html';" src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1656089878/tragnrok_portrait.jpg"/>
+            <article style="padding-left: 20px;"><a href="./pages/tragnarok.html">Thor Ragnarok</a></article>
+          </div>
+           <div class="carouselImage" style="background-size:cover; padding-right: 25px;">
+            <img onclick="window.location.href='./pages/pacificrim.html';"  src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654948635/pacificrim_.jpg"/>
+            <article style="padding-left: 50px;"><a href="./pages/pacificrim.html">Pacific Rim</a></article>
+          </div>
+           <div class="carouselImage" style="background-size:cover;">
+            <img onclick="window.location.href='./pages/drsmultiverse.html';"  src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1656089887/drmultiverse.jpg"/>
+            <article><a href="./pages/drsmultiverse.html">Doctor Strange Multiverse of Madness</a></article>
+          </div>
+
+        </div>
         </section>
-        <section>
-            <h2>&nbsp;Top Rated&nbsp;<i class="fas fa-fire"></i></h2>
-            <navc>
-                <a href="/pages/spidermannwh.html" style="text-decoration: none; "><img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654947703/spiderman_nwh.jpg"/>Spider-Man No Way Home</a>
-                <a href="/pages/ironman.html" style="text-decoration: none;"><img src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654948784/ironman.jpg" /><br/> Iron Man</a>
-                <!--<a href="/pages/series/bb.html" style="text-decoration: none;"><img src="/images/bb.jpg " /> Breaking bad </a>
-                <a href="/pages/series/bcsaul.html" style="text-decoration: none;"><img src="/images/bcsaul.jpg " /> Better Call Saul </a>
-                <a href="/pages/movies/tenet.html" style="text-decoration: none;"><img src="/images/tenet.jpg" />Tenet </a>-->
-            </navc>
+        <h2>&nbsp;Top Rated&nbsp;<i class="fas fa-fire"></i></h2>
+        <section class="items" style="padding-top: -1rem;">
+            <div class="carouselOfImages">
+                
+              <div class="carouselImage" style="background-size:cover;">
+                <img onclick="window.location.href='./pges/spidermannwh.html';" src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654947703/spiderman_nwh.jpg"/>
+                <article><a href="./pages/spidermannwh.html">SpiderMan No Way Home </a></article>
+              </div>
+              <div class="carouselImage" style="background-size:cover;">
+                <img onclick="window.location.href='./pages/ironman.html';" src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1654948784/ironman.jpg"/>
+                <article style="padding-left: 50px;"><a href="./pages/ironman.html">Iron Man </a></article>
+              </div>
+             <div class="carouselImage" style="background-size:cover;">
+                <img onclick="window.location.href='./pages/batmanbegins.html';" src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1656088580/bbegins.jpg"/>
+                <article style="padding-left: 24px;"><a href="./pages/batmanbegins.html">Batman Begins</a></article>
+              </div>
+              <!-- <div class="carouselImage" style="background-size:cover;">
+                <img onclick="window.location.href='#';" src="https://res.cloudinary.com/dp9icjdvf/image/upload/v1656091824/soon...jpg"/>
+                <article style="padding-left: 20px;"><a href="#">Coming Soon..</a></article>
+              </div> -->
+            </div>
+            </section>
+        <!-- <div id="dark"></div>
+        <div id="lightbox"></div>
+            <div aria-labelledby="modal-1-label" class="modal fade modal-media modal-video modal-slim modal-1" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        <div class="modal-header"><button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">X</span></button></div>
 
-        </section>
-        <!--<section>
-            <h2>&nbsp;Trending&nbsp;<i class="fas fa-chart-line"></i></h2>
-            <navc>
-                <a href="/pages/movies/ssqaud21.html" style="text-decoration: none;"><img src="/images/ssquad.jpg " /> Suicide Squad </a>
-                <a href="/pages/series/fm.html" style="text-decoration: none;"><img src="/images/fm.jpg " /> The Family Man </a>
-                <a href="/pages/series/stthings.html" style="text-decoration: none;"><img src="/images/strangerthings.png" /> The Stranger Things </a>
-                <a href="/pages/series/friends.html" style="text-decoration: none;"><img src="/images/friends.jpg " />Friends</a>
-                <a href="/pages/movies/blackwidow.html" style="text-decoration: none;"><img src="/images/blackwidow.jpg " /> Black Widow</a>
-            </navc>
+        <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9"><iframe allowfullscreen="" frameborder="0" src="" width="100%"></iframe></div>
+        </div>
+        </div>
+        </div>
+        </div> -->
 
-        </section>-->
-    
+      <script src="./pages/scripts/slider.js"></script>
 
-        <!--<script>
-            var space = <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            //$('nav ul li.btn span').click(function() {
-                //$('nav ul div.items').toggleClass("show ");
-                //$('nav ul li.btn span').toggleClass("show ");
-            //});
-        </script>-->
-
-        <footer style="text-align: center; ">
+        <footer style="text-align: center; position: relative;">
             <br/>
             <p>&copy <script> document.write(new Date().getFullYear()); </script> 【﻿ＦＰＳ 道場】, All Rights Reserved.</p>
         </footer>
