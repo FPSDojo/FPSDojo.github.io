@@ -152,8 +152,8 @@ nav {
 }
 
 .links a:hover {
-    background-color: #316eb3;
-    text-decoration: underline;
+  background-color: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+  text-decoration: underline red;
 }
 
 #btnMenu {
@@ -189,7 +189,8 @@ nav {
         text-align: center;
     }
     .links a:hover {
-        background-color: #316eb3;
+      background: rgb(44, 43, 43);
+      text-decoration: underline red;
     }
     #btnMenu:checked~.links {
         left: 0;

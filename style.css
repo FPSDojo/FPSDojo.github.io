@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1144px;
-    margin: auto;
+    margin: auto;   
 }
 
 h2 {
@@ -50,8 +50,8 @@ h2 {
 }
 
 .links a:hover {
-    background-color: #316eb3;
-    text-decoration: underline;
+    background-color: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    text-decoration: underline red;
 }
 
 #btnMenu {
@@ -63,8 +63,11 @@ h2 {
     display: none;
 }
 
-article a {
+article a{
     text-decoration: none;
+}
+article a:hover {
+    text-decoration: underline red;
 }
 
 @media only screen and (max-width: 510px) {
@@ -95,7 +98,8 @@ article a {
         text-align: center;
     }
     .links a:hover {
-        background-color: #316eb3;
+        background: rgb(44, 43, 43);
+        text-decoration: underline red;
     }
     #btnMenu:checked~.links {
         left: 0;

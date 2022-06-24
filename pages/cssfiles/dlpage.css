@@ -44,8 +44,8 @@ nav {
 }
 
 .links a:hover {
-    background-color: #316eb3;
-    text-decoration: underline;
+  background-color: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+  text-decoration: underline red;
 }
 
 #btnMenu {
@@ -64,7 +64,7 @@ nav {
     }
     .links {
         position: fixed;
-        background-color: #21212c;
+        background: rgb(44, 43, 43);
         min-height: calc(100vh - 51px);
         flex-flow: column;
         width: 100%;
@@ -81,7 +81,8 @@ nav {
         text-align: center;
     }
     .links a:hover {
-        background-color: #316eb3;
+      background: rgb(44, 43, 43);
+      text-decoration: underline red;
     }
     #btnMenu:checked~.links {
         left: 0;
