@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fight Club - 【﻿ＦＰＳ 道場】</title>
+    <link rel="stylesheet" href="/pages/cssfiles/dlpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!--Icons-->
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dp9icjdvf/image/upload/v1656094973/icon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <nav>
+        <label id="logo" onclick="window.location.href='/index.html';">
+            【﻿ＦＰＳ 道場】
+        </label>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu" class="toggleMenu" onclick="dropdownhide()">
+            <i class="fas fa-bars" ></i>
+        </label>
+        <div class="links">
+            <a href="/index.html">Home</a>
+            <!--<a href="/series.html">Series</a>
+            <a href="/movies.html">Movies</a>-->
+			<a href="https://anihubx.github.io">Anime Encodes</a>
+            <a href="/aboutus.html">About Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="poster">
+            <img src="https://res.cloudinary.com/dxi9wcchp/image/upload/v1662759068/TGM_copy_hqo7xn.jpg">
+            <h2 style="color: white; text-align: center;">Fight Club (1999)</h2>
+            <div class="ForFont">
+            <p>After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.</p><br>
+            <p>Rating: - 8.5/10&nbsp;<i class="fa fa-star"></i></p>
+            <p>Duration: - 2hrs 10mins&nbsp;<i class="fa fa-clock"></i></p>
+            <p>Resolution: - IMAX HDR 1080p 60fps&nbsp;<i class="fa fa-expand"></i></p>
+            <p>Audio: - Eng Audio With Eng Subtitles&nbsp;<i class="fas fa-closed-captioning"></i></p>
+            <p>Genres: - Action, Adventure, Drama&nbsp;<i class="fas fa-money-check"></i></p>
+            </div>
+        </div>
+        <div class="download" id="mydropdown">
+            <div class="menu" id="menu-drop">
+               <i class="fa fa-download">&nbsp;<span class="select ForFont">Download</span></i>
+               <div class="menu__icon-box">
+                   <div class="menu__icon"></div>
+               </div>
+               <div class="menu__dropdown">
+                <div class="menu__dropdown-option">
+                <a href="https://lksfy.com/RGEWBj" target="_blank" style="text-decoration: none; color: rgb(197, 188, 188);">
+                 1080p 60fps - GDrive</a>
+                </div>
+               </div>
+             </div>
+         </div>
+
+         <script>
+            const menu = document.querySelector('.menu');
+         const option = document.querySelector('.menu span')
+
+         menu.addEventListener('click', e => {
+           if (e.target.classList.contains('menu') || e.target.classList.contains('select') || e.target.classList.contains('menu__icon')) {
+               menu.classList.toggle('menu__active');
+           }
+
+           if (e.target.classList.contains('menu__dropdown-option')) {
+               option.innerHTML = e.target.textContent;
+               menu.classList.remove('menu__active');
+           }
+         })
+         </script>
+
+        <script src="/pages/scripts/contenthide.js"></script>
+
+
+    <footer style="text-align: center; ">
+        <br/>
+        <p>&copy <script> document.write(new Date().getFullYear()); </script> 【﻿ＦＰＳ 道場】, All Rights Reserved.</p>
+
+    </footer>
+</body>
+
+</html>
