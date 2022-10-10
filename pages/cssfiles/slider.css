@@ -15,6 +15,7 @@
   transform: scale(1);
 }
 .carouselImage img {
+  border-radius: 15px;
   height:235px;
 }
 .carouselImage.is-selected {
