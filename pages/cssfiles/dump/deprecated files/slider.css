@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
  html {
 	 position: relative;
 	 overflow-x: hidden !important;
 }
  body {
     background: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
-	 font-family: 'Quicksand', sans-serif;
+	 font-family: 'Poppins', sans-serif;
 }
  a, a:hover {
 	 text-decoration: none;

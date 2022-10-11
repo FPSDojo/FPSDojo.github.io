@@ -1,17 +1,17 @@
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@100&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); */
 * {
     margin: 0;
     padding: 0;
     color: #000;
     box-sizing: border-box;
-    font-family: 'Cascadia Code',consolas, monospace;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     align-items: center;
     background-color: #140b0b;
     color: white;
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
@@ -22,7 +22,7 @@ body1 {
     background-color: #140b0b;
     color: white;
     display: flex;
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     height: 100vh;
@@ -111,7 +111,7 @@ body1 {
   }
 .title {
     color: #ffffff;
-    font-family: arial;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-style: italic;
     margin-top: 4px;

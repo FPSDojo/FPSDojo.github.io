@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var $imagesCarousel = $('.carouselOfImages').flickity({
       contain: true,
-      autoPlay: true,
+      autoPlay: false,
       wrapAround: true,
       friction: 0.3
     });
