@@ -14,7 +14,7 @@
 }
 
 body {
-    background: #000000;
+  background-color: #140b0b;
     color: white;
     font-family: 'Cascadia Code',consolas, monospace;
 }
@@ -70,27 +70,34 @@ nav {
         margin-right: 1rem;
     }
     .links {
-        position: fixed;
-        background: rgb(44, 43, 43);
-        min-height: calc(100vh - 51px);
-        flex-flow: column;
-        width: 100%;
-        top: 51px;
-        left: 100%;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
-    }
-    .links a {
-        width: 100%;
-        text-align: center;
-    }
-    .links a:hover {
-      background: rgb(44, 43, 43);
-      text-decoration: underline red;
-    }
+      position: fixed;
+      background: rgba(0, 0, 0, 0.65);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(9.7px);
+      -webkit-backdrop-filter: blur(9.7px);
+      min-height: calc(100vh - 51px);
+      flex-flow: column;
+      width: 100%;
+      top: 51px;
+      z-index: 1;
+      left: 100%;
+      overflow: hidden;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+  }
+  .links a {
+      width: 100%;
+      text-align: center;
+  }
+  .links a:focus {
+      background: none;
+  }
+  .links a:hover {
+      border-radius: 0 0 16px 16px;
+      text-decoration: underline red;}
     #btnMenu:checked~.links {
         left: 0;
     }
