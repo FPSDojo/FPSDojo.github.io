@@ -9,7 +9,8 @@
 }
 body {
     align-items: center;
-    background: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(116,24,24,1) 0%, rgba(64,6,6,1) 100%);
     color: white;
     font-family: "Merriweather", serif;
     flex-wrap: wrap;
@@ -19,7 +20,8 @@ body {
   }
 body1 {
     align-items: center;
-    background: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(116,24,24,1) 0%, rgba(64,6,6,1) 100%);
     color: white;
     display: flex;
     font-family: "Merriweather", serif;

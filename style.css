@@ -9,7 +9,8 @@
 }
 
 body {
-    background: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(116,24,24,1) 0%, rgba(64,6,6,1) 100%);
     color: white;
 }
 
@@ -81,13 +82,17 @@ article a:hover {
     }
     .links {
         position: fixed;
-        background: rgb(44, 43, 43);
+        background: rgba(0, 0, 0, 0.65);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9.7px);
+        -webkit-backdrop-filter: blur(9.7px);
         min-height: calc(100vh - 51px);
         flex-flow: column;
         width: 100%;
         top: 51px;
         z-index: 1;
         left: 100%;
+        overflow: hidden;
         transition: all 0.5s;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
@@ -98,8 +103,11 @@ article a:hover {
         width: 100%;
         text-align: center;
     }
+    .links a:focus {
+        background: none;
+    }
     .links a:hover {
-        background: rgb(44, 43, 43);
+        border-radius: 0 0 16px 16px;
         text-decoration: underline red;
     }
     #btnMenu:checked~.links {
