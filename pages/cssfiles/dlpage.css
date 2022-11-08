@@ -205,7 +205,7 @@ nav {
   .menu {
     border-radius: 99999rem;
     position: relative;
-    width: 20rem;
+    width: 17rem;
     height: 2rem;
     font-size: 1.3rem;
     font-weight: bold;
@@ -218,7 +218,7 @@ nav {
     transition: transform 0.4s cubic-bezier(0.28, 0.25, 0.36, 1.28);
     padding: 1.8rem 2.4rem;
     cursor: pointer;
-    box-shadow: 0rem 0rem 3rem #000000;
+    box-shadow: 0rem 0rem 3rem #b94040;
     z-index: 2;
   }
   .menu__icon-box {
@@ -235,7 +235,6 @@ nav {
     transform: rotate(135deg);
   }
   .menu__dropdown {
-    width: 20rem;
     font-weight: lighter;
     margin-left: -2.4rem;
     position: absolute;
@@ -249,7 +248,7 @@ nav {
     z-index: -999;
   }
   .menu__dropdown-option {
-    padding: 0.8rem 1.6rem;
+    padding: 0.1rem 1.6rem;
     border-radius: 0.4rem;
   }
   .menu__dropdown-option:hover {
@@ -264,6 +263,8 @@ nav {
     margin-top: 0.5rem;
   }
   .menu__active .menu__dropdown {
+    width: 17rem;
+    height: 2rem;
     opacity: 1;
     display: block;
     animation: showDropdownMenu 0.4s cubic-bezier(0.28, 0.25, 0.36, 1.28);
