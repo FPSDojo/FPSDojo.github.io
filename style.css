@@ -20,7 +20,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     max-width: 1144px;
-    margin: auto;   
+    margin: auto;
 }
 
 h2 {
@@ -52,7 +52,7 @@ h2 {
 }
 
 .links a:hover {
-    background-color: linear-gradient(90deg, rgba(14,22,25,1) 0%, rgba(89,48,48,1) 63%);
+    background-color: linear-gradient(90deg, rgba(14, 22, 25, 1) 0%, rgba(89, 48, 48, 1) 63%);
     text-decoration: underline red;
 }
 
@@ -65,9 +65,10 @@ h2 {
     display: none;
 }
 
-article a{
+article a {
     text-decoration: none;
 }
+
 article a:hover {
     text-decoration: underline red;
 }
@@ -77,9 +78,11 @@ article a:hover {
         display: block;
         margin-right: 1rem;
     }
+
     h2 {
         padding: 15px 0px 0px 0px;
     }
+
     .links {
         position: fixed;
         background: rgba(0, 0, 0, 0.65);
@@ -99,17 +102,21 @@ article a:hover {
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
     }
+
     .links a {
         width: 100%;
         text-align: center;
     }
+
     .links a:focus {
         background: none;
     }
+
     .links a:hover {
         border-radius: 0 0 16px 16px;
         text-decoration: underline red;
     }
+
     #btnMenu:checked~.links {
         left: 0;
     }
